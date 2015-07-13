@@ -1,4 +1,5 @@
 ﻿using GISCommunity.WebApi.Utils;
+using System.Configuration;
 using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Cors;
@@ -10,7 +11,8 @@ namespace GISCommunity
         public static void Register(HttpConfiguration config)
         {
             //Enable CORS
-            var cors = new EnableCorsAttribute("*", "*", "*");
+            //http://www.asp.net/web-api/overview/security/enabling-cross-origin-requests-in-web-api
+            var cors = new EnableCorsAttribute(ConfigurationManager.AppSettings["CORSServer"] ?? "*", "*", "*");
             config.EnableCors();
 
             // Web API configuration and services
