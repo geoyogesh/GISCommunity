@@ -23,6 +23,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultSchema>GISC</DefaultSchema>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -57,5 +58,16 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Views" />
+    <Folder Include="Procedures" />
+    <Folder Include="Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\REGIONS.sql" />
+    <Build Include="Tables\LANGUAGES.sql" />
+    <Build Include="Scripts\Data.sql" />
+    <Build Include="Tables\FOLDERS.sql" />
+    <Build Include="Procedures\SP_CREATE_FOLDER.sql" />
   </ItemGroup>
 </Project>
