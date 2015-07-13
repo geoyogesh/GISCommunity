@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GISCommunity", "GISCommunity\GISCommunity.csproj", "{6764229D-6EEE-4F8B-A3B9-707CE51000DC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{591FF8F0-BE4A-4415-BA95-4B677DF1113E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "GISCommunity.SQLServerDB", "Database\GISCommunity.SQLServerDB\GISCommunity.SQLServerDB.sqlproj", "{6623D472-9CAF-471B-9454-502D49A5E54A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +19,17 @@ Global
 		{6764229D-6EEE-4F8B-A3B9-707CE51000DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6764229D-6EEE-4F8B-A3B9-707CE51000DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6764229D-6EEE-4F8B-A3B9-707CE51000DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6623D472-9CAF-471B-9454-502D49A5E54A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6623D472-9CAF-471B-9454-502D49A5E54A} = {591FF8F0-BE4A-4415-BA95-4B677DF1113E}
 	EndGlobalSection
 EndGlobal
